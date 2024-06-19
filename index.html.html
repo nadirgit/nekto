@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siyweb</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://nticrabat.com/img/ofppt_lg.png" alt="OFPPT Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Espace Stagiaire</a></li>
+                <li>
+                    <div class="coursera-front-search-banner-input-container">
+                        Consultez les emplois de temps
+                        <select class="form-control" id="coursera-front-search-banner-input" name="groupe" onchange="submit();" style="font-family:'Open Sans', sans-serif">
+                            <option></option>
+                            <option value="214">INFO101</option>
+                            <option value="219">INFO102</option>
+                            <option value="216">INFOmngjhfyftyfytdty103</option>
+                            <option value="216">INFOmngjhfyftyfytdty103</option>
+                            <option value="202">DEV101</option>
+                            <option value="203">DEV102</option>
+                            <option value="204">DEV103</option>
+                            <option value="205">DEV104</option>
+                            <option value="206">DEV105</option>
+                            <option value="207">DEV106</option>
+                            <option value="208">DEV107</option>
+                            <option value="209">DEV108</option>
+                            <option value="210">DEV109</option>
+                            <option value="211">DEV110</option>
+                            <option value="241">DEVOWFS201</option>
+                            <option value="244">DEVOWFS202</option>
+                            <option value="245">DEVOWFS203</option>
+                            <option value="246">DEVOWFS204</option>
+                            <option value="251">DEVOWFS205</option>
+                            <option value="247">DEVOWFS206</option>
+                            <option value="258">DEVOWFS207</option>
+                            <option value="257">DEVOWFS208</option>
+                            <option value="256">DEVOWFS209</option>
+                            <option value="265">DEVOWFS210</option>
+                            <option value="221">ID101</option>
+                            <option value="222">ID102</option>
+                            <option value="223">ID103</option>
+                            <option value="255">ID104</option>
+                            <option value="259">ID105</option>
+                            <option value="233">IDOCC201</option>
+                            <option value="266">IDOCC202</option>
+                            <option value="234">IDOCS201</option>
+                            <option value="240">IDOCS202</option>
+                            <option value="267">IDOCS203</option>
+                            <option value="268">IDOCS204</option>
+                            <option value="269">IDOCS205</option>
+                            <option value="253">DES101</option>
+                            <option value="254">DES102</option>
+                            <option value="270">DESOUX201</option>
+                            <option value="271">DESOUX202</option>
+                            <option value="272">DESOUX203</option>
+                            <option value="273">PIE101</option>
+                            <option value="274">PIE102</option>
+                            <option value="275">PIE103</option>
+                            <option value="276">PIE104</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="https://www.ofppt.ma/sites/default/files/styles/thumbnail_home_slider/public/photos_home_slider/SLIDER%20PAGE%20D%27ACCUEIL%20-%20L%E2%80%99OFPPT%20et%20LafargeHolcim%20Maroc%20s%E2%80%99allient%20pour%20la%20mise%20en%20place%20de%20formations%20qualifiantes%20multisectorielles.png?itok=rIxdTq8K" alt="Slider 1">
+            <img src="https://www.ofppt.ma/sites/default/files/styles/thumbnail_home_slider/public/photos_actualites/SLIDER%20PAGE%20D%27ACCUEIL%20-%20SITE%20OFPPT%20GITEX%20AFRICA%202024.png?itok=zs3vgNhc" alt="Slider 2">
+        </div>
+        <section class="last-news">
+            <h2>Last News</h2>
+            <p>Stay updated with the latest news and announcements.</p>
+            <!-- Add news content here -->
+        </section>
+        <section class="time-exam">
+            <h2>Time Exam</h2>
+            <p>Check your exam schedules here.</p>
+            <!-- Add exam schedule content here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Siyweb. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
+<style>body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.coursera-front-search-banner-input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+    margin-top: 5px;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero img.active {
+    opacity: 1;
+}
+
+.last-news, .time-exam {
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin: 20px 0;
+}
+
+.last-news h2, .time-exam h2 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+</style>
+<script>document.addEventListener('DOMContentLoaded', function() {
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.hero img');
+    const imageCount = images.length;
+
+    function showNextImage() {
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % imageCount;
+        images[currentIndex].classList.add('active');
+    }
+
+    images[currentIndex].classList.add('active');
+    setInterval(showNextImage, 6000);
+});
+</script>
